@@ -11,7 +11,7 @@
     ],
     "rewrites":[
       {
-        "source":"finsense.in/*",
+        "source":"**",
         "function":"app"
       }
     ]

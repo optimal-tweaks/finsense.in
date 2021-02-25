@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Create Case Study</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+     <div class="container mt-2">
+         <div class="card">
+             <div class="card-body">
+                 <form id="post-form">
+                     <center><h3>Create A Case Study</h3></center>
+                     <textarea id="heading" class="form-control mt-2 mb-1" placeholder="Heading"></textarea>
+                     <textarea id="description" class="form-control mt-2 mb-1" placeholder="Description"></textarea>
+                     <textarea id="category" class="form-control mt-2 mb-1" placeholder="Category"></textarea>
+                     <textarea id="summernote" class="form-control mt-2 mb-1"></textarea>
+                     <span>Add Case Study Picture</span>
+                     <input type="file" class="form-control mt-2 mb-1" id="imagePost" placeholder="Choose Case Study Image" accept="images/*">
+                     <span>Add Thumbnail Picture</span>
+                     <input type="file" class="form-control mt-2 mb-1" id="image" placeholder="Choose Case Study Image" accept="images/*">
+                     <textarea id="imageAlt" class="form-control mt-2 mb-1" placeholder="Image ALT Tag"></textarea>
+                     <div class="text-center mt-2 mb-1">
+                         <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+                     </div>
+
+                 </form>
+                 <script>
+                    $(document).ready(function() {
+                        $('#summernote').summernote({
+                            toolbar: [
+                            ['style', ['style']],
+                            ['fontsize', ['fontsize']],
+                            ['font', ['bold', 'italic', 'underline', 'clear']],
+                            ['fontname', ['fontname']],
+                            ['color', ['color']],
+                            ['para', ['ul', 'ol', 'paragraph']],
+                            ['height', ['height']],
+                            ['insert', ['picture','link', 'hr']],
+                            ['table', ['table']]
+                        ],
+                        height: 200,
+                        focus: false,
+                        //tabsize: 2,
+                        placeholder: "What's on your mind..."
+                        //fontSizes: ['12', '14', '18', '24', '36', '48' , '64', '82', '150']
+                        });
+                    });
+                  </script>
+              </div>
+
+         </div>
+         <br/>
+         <br/>
+         <center><h3 class="mt-2 mb-1">Created Case Studies</h3></center>
+         <div class="row mt-4 mt-2 mb-1" id="posts">
+
+         </div>
+
+     </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAOdDXlPTgXvXqIWEOAky9AcJHoQW3m7d8",
+      authDomain: "finsense-wealth-minimal.firebaseapp.com",
+      databaseURL: "https://finsense-wealth-minimal-default-rtdb.firebaseio.com",
+      projectId: "finsense-wealth-minimal",
+      storageBucket: "finsense-wealth-minimal.appspot.com",
+      messagingSenderId: "85091451786",
+      appId: "1:85091451786:web:29a32618ed67f9de603e73"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js" defer></script>
+        <script src="js/createCaseStudy.js"></script>
+    </body>
+</html>

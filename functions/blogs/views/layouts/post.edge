@@ -1,0 +1,23 @@
+@layout('layouts.master')
+
+
+@section('meta-content')
+  <title>{{ post.heading }}</title>
+  <meta content="{{ post.heading }}" property="og:title">
+  <meta content="{{ post.heading }}" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+@endsection
+
+
+@section('main-content')
+  <div class="intro-section blog" style="background-image:url({{post.imagePostURL}})"></div>
+  <div class="detail-section">
+    <div class="container-28 w-container">
+      <h1 class="heading-20">{{ post.heading }}</h1>
+      <p class="paragraph-10">{{{post.text}}}</p>
+    </div>
+  </div>
+  <div class="tab-section" id="suggestions">
+  </div>
+@endsection

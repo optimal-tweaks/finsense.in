@@ -1,0 +1,46 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1636.62 368.65">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 221.65px;
+        font-family: Gilroy-Bold, Gilroy;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+      }
+
+      .cls-1, .cls-8 {
+        fill: #5f9442;
+      }
+
+      .cls-2 {
+        letter-spacing: 0.13em;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #964320;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.14em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.14em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.13em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.14em;
+      }
+    </style>
+  </defs>
+  <title>Finsense Nav Bar-1</title>
+  <text class="cls-1" transform="translate(452.98 253.24)">FI<tspan class="cls-2" x="236.5" y="0">N</tspan><tspan class="cls-3" x="414.26" y="0">S</tspan><tspan class="cls-4" x="573.4" y="0">E</tspan><tspan class="cls-5" x="721.91" y="0">N</tspan><tspan class="cls-6" x="899.67" y="0">S</tspan><tspan class="cls-4" x="1058.82" y="0">E</tspan></text>
+  <g>
+    <path class="cls-7" d="M77,249.09a17.85,17.85,0,0,1,.07-25.3,17.87,17.87,0,0,1,25.17.07l65,65a28.11,28.11,0,0,0,39.73,0l32.49-32.48a28.13,28.13,0,0,0,0-39.73l-65-65a17.84,17.84,0,1,1,25.24-25.23l97.44,97.45a17.85,17.85,0,0,1,0,25.23l-97.44,97.45a17.87,17.87,0,0,1-25.24,0Z"/>
+    <path class="cls-8" d="M29.21,201.26a17.87,17.87,0,0,1,0-25.24L175.47,29.76a17.85,17.85,0,0,1,25.23,0L346.07,175.12a17.85,17.85,0,0,1-25.24,25.24L208,87.48a28.11,28.11,0,0,0-39.73,0L135.74,120a28.11,28.11,0,0,0,0,39.73l65,65a17.84,17.84,0,0,1-25.23,25.23l-65-65a28.11,28.11,0,0,0-39.73,0L54.44,201.26A17.87,17.87,0,0,1,29.21,201.26Z"/>
+  </g>
+</svg>
